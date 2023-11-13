@@ -5,6 +5,9 @@ Author: @Ephraim Zimmerman
 Email: quants@brandeis.edu
 Website: brandeisquantclub.com; quants.devpost.com
 
+Participant: @Barry Wen
+Email: barrywen@brandeis.edu
+
 Description:
 
 For any technical issues or questions please feel free to reach out to
@@ -80,6 +83,7 @@ class Bot:
         max_depth = 4
         move, _ = self.minimax(self.board, max_depth,
                                float("-inf"), float("inf"), True)
+        print("My move: " + move.uci())
         return move.uci()
 
     # Minimax with alpha-beta pruning
